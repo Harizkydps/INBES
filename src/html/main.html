@@ -1,11 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT. INOVASI BERDAYA SPASIAL</title>
+  <!-- Menghubungkan File CSS Eksternal -->
+  <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
+
+  <!-- Background Image Overlay -->
+  <div class="bg-overlay">
+    <img src="/pictures/background.png" alt="background">
+    <div class="gradient-layer"></div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navigasi">
+    <!-- Logo PT. INOVASI BERDAYA SPASIAL -->
+    <div class="logo">
+      <img src="/pictures/logo_inbes_2.png" alt="PT. INOVASI BERDAYA SPASIAL">
+    </div>  
+
+    <!-- Nav Menu -->
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="main.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="Career.html">Career</a></li>
+        <li><a href="ourwork.html">Our Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>    
+
+    <!-- Right Controls -->
+    <div class="controls">
+      <!-- Switch Bahasa -->
+      <div class="lang-switch">
+        <button class="lang-btn">EN</button>
+        <button class="lang-btn active">ID</button>
+      </div>
+
+      <!-- Mode Gelap Toggle -->
+      <button class="theme-btn" aria-label="Toggle theme">
+        <svg style="width:1rem;height:1rem;" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+      </button>
+
+      <!-- Tombol Hubungi Kami -->
+      <a href="contact.html" class="btn-contact-nav">Contact us</a>
+    </div>
+  </header>
+
+  <!-- Hero Content -->
+  <main class="hero-container">
+    <!-- Judul Utama (Kiri) -->
+    <div>
+      <h1 class="hero-title">
+        <span class="text-highlight">Sustainable Development <br /></span> for our<br />
+        green future<br />
     
+      </h1>
+    </div>
+
+    <!-- Deskripsi & Tombol Aksi (Kanan) -->
+    <div class="hero-right">
+      <p class="hero-description">
+        PT. INOVASI BERDAYA SPASIAL is a leading company in the field of geospatial technology and artificial intelligence, dedicated to providing innovative solutions for sustainable development and environmental conservation.
+      </p>
+
+      <!-- Tombol CTA -->
+      <div class="cta-buttons">
+        <a href="services.html" class="btn-primary">
+          Explore solutions
+          <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+        <a href="ourwork.html" class="btn-secondary">Our Projects</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Bar -->
+  <footer class="footer-bar">
+    <!-- Koordinat Lokasi -->
+    <div class="coordinates">
+      <span>-6.9175°S</span>
+      <span>107.6191°E</span>
+      <span style="color:#64748b;">—</span>
+      <span style="color:#f1f5f9; font-family:sans-serif;">Bandung, Indonesia</span>
+    </div>
+
+    <!-- Indicator Scroll -->
+    <a href="#about" class="scroll-icon" aria-label="Scroll down">
+      <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7-7-7"></path>
+      </svg>
+    </a>
+  </footer>
+
 </body>
 </html>

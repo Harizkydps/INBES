@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT. INOVASI BERDAYA SPASIAL</title>
+  <!-- Menghubungkan File CSS Eksternal -->
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <!-- Background Image Overlay -->
+  <div class="bg-overlay">
+    <img src="/pictures/background.png" alt="background">
+    <div class="gradient-layer"></div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navigasi">
+    <!-- Logo PT. INOVASI BERDAYA SPASIAL -->
+    <div class="logo">
+      <img src="/pictures/logo_inbes_2.png" alt="PT. INOVASI BERDAYA SPASIAL">
+    </div>  
+
+    <!-- Nav Menu -->
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="Career.html">Career</a></li>
+        <li><a href="ourwork.html">Our Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>    
+
+    <!-- Right Controls -->
+    <div class="controls">
+      <!-- Switch Bahasa -->
+      <div class="lang-switch">
+        <button class="lang-btn">EN</button>
+        <button class="lang-btn active">ID</button>
+      </div>
+
+      <!-- Mode Gelap Toggle -->
+      <button class="theme-btn" aria-label="Toggle theme">
+        <svg style="width:1rem;height:1rem;" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+      </button>
+
+      <!-- Tombol Hubungi Kami -->
+      <a href="contact.html" class="btn-contact-nav">Contact us</a>
+    </div>
+  </header>
+<main class="container my-5">
+        <section class="about-section mb-5">
+            <h1 class="page-title">Tentang Saya & Proyek</h1>
+            <p class="lead-text">
+                Proyek WebGIS ini dikembangkan sebagai bagian dari pelatihan Bootcamp WebGIS. Aplikasi ini bertujuan untuk memetakan dan mengevaluasi tingkat aksesibilitas lokasi perumahan/hunian di kawasan Kota Surakarta (Solo) Raya menuju pusat kota serta fasilitas transportasi publik.
+            </p>
+        </section>
+
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <div class="card-box mb-4">
+                    <h2 class="section-subtitle"><i class="fa-solid fa-graduation-cap me-2"></i>Riwayat Pendidikan</h2>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Jenjang</th>
+                                    <th>Institusi / Universitas</th>
+                                    <th>Tahun</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>S1 Perencanaan Wilayah & Kota</strong></td>
+                                    <td>Universitas Diponegoro (UNDIP)</td>
+                                    <td>2021 - 2025</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>SMA / SMK</strong></td>
+                                    <td>SMAN 20 BANDUNG</td>
+                                    <td>2019 - 2022</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-box">
+                    <h2 class="section-subtitle"><i class="fa-solid fa-envelope me-2"></i>Hubungi Developer</h2>
+                    <!-- Form diperbarui dengan id="contactForm" dan tanpa action="#" yang error -->
+                    <form id="contactForm" class="contact-form">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama Lengkap:</label>
+                            <input type="text" id="nama" name="nama" class="form-control" required placeholder="Masukkan nama Anda">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Alamat Email:</label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="nama@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan / Saran:</label>
+                            <textarea id="pesan" name="pesan" class="form-control" rows="4" required placeholder="Tuliskan masukan untuk proyek WebGIS ini..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-aksi w-100">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="card-box text-center h-100">
+                    <h2 class="section-subtitle mb-4"><i class="fa-solid fa-user-gear me-2"></i>Profil Developer</h2>
+                    
+                    <div class="developer-profile">
+                        <div class="avatar-wrapper mb-3">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.WFcTQy9mjyyXo4avkoaydQHaHa?w=1250&h=1250&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Foto Developer" class="dev-avatar">
+                        </div>
+                        <h4 class="dev-name">Harizky Arfianto</h4>
+                        <p class="dev-role text-muted">PWK Universitas Diponegoro</p>
+                        
+                        <div class="social-links my-4">
+                            <a href="https://www.linkedin.com/in/harizkyarfianto" target="_blank" class="social-icon linkedin" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/rizkyarfnt" target="_blank" class="social-icon instagram" title="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+
+                        <div class="whatsapp-contact-box">
+                            <i class="fa-brands fa-whatsapp wa-icon"></i>
+                            <div>
+                                <span class="d-block small text-muted">WhatsApp Kontak:</span>
+                                <strong>+62 823-2962-5916</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+  </body>
+</html>
